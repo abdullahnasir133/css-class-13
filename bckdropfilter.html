@@ -1,0 +1,34 @@
+<!-- backdropfiltervalues blur brightness contrast drop-shadow grayscale hue-rotat invert opacity sepia saturate none -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Backdrop filter </title>
+        <style>
+            #container{
+                width: 600px;
+                height: 600px;
+                border: 5px solid black;
+                background: url(images/Falco_peregrinus_tethered.jpg) ;
+                display: flex;
+                align-items:center ;
+                justify-content: center;
+            }
+            #inner{
+                width: 400px;
+                height: 250px;
+                text-align: center;
+                border-radius: 5px;
+                border: 2px solid #fff;
+                background-color: rgba(255, 255, 255, 0,4);
+                backdrop-filter: blur(2px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="inner">
+                <h1>yahoo</h1>
+            </div>
+        </div>
+    </body>
+ </html>

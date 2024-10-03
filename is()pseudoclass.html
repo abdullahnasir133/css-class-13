@@ -1,0 +1,32 @@
+<!DOCTYPE hrml>
+<html>
+    <head>
+        <title>:is pseudo class</title>
+        <style>
+            /* #test1 :is(h1,h2,h3){
+                font-family: Arial, Helvetica, sans-serif;
+                color: rebeccapurple;
+            }
+             */
+            :is(#test1,#test2) :is(h1,p){font-family: Arial, Helvetica, sans-serif;
+            color: red;}
+            :is(#test1,#test2) p:hover{color: rebeccapurple;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Heading outside div</h1>
+        <div id="test1">
+            <h1>Section One</h1>
+            <h2>Sub heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, soluta architecto. Repudiandae consequuntur beatae nesciunt sapiente adipisci obcaecati eligendi, at ratione sit possimus unde expedita inventore praesentium repellendus mollitia impedit accusamus laborum suscipit rerum iusto non earum. Qui aperiam rerum ex reprehenderit officia, quisquam culpa quos doloremque! Quae, neque dicta.</p>
+            <h3>Sub heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet harum sint veniam deserunt, dignissimos incidunt quaerat iste maxime vitae, voluptate explicabo, blanditiis rerum porro aperiam consequuntur rem? Eos, iusto voluptates!</p>
+        </div>
+        <hr>
+        <div id="test2">
+            <h2>Section two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquam ea facere! Magni vel alias inventore mollitia sunt. Obcaecati voluptas esse praesentium omnis necessitatibus reiciendis, ipsum beatae iste molestias natus est ut nobis exercitationem id corrupti labore. Ex, neque et facilis, laboriosam debitis laborum nam at ad ipsa obcaecati consectetur!</p>
+        </div>
+    </body>
+</html>
